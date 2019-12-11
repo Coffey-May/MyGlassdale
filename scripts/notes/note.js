@@ -1,7 +1,10 @@
 const SingleNoteComponent = (note) => {
     return `
   <div class ="note--Inner" >
-       <div> NOTE:${note.date}</div>
+       <div>DATE:${note.date}</div>
+       <div>SUSPECT:${note.suspect}</div>
+       <div>NOTE:${note.note}</div>
+       
 
   </div>
    
