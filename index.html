@@ -1,4 +1,46 @@
+<!-- In terminal, cd into api and enter json-server -w notes.json -p 8000 
+in another terminal window, run the command hs -o or http-server tto host.
+Disable extention to clear cors errors when not in use.-->
+
+
 <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Glassdale PD</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="pageTitle">Glassdale Police Department</div>
+        <main class="container">
+            <header>
+                <div class="filters">
+                    <div class="filter filters__crime"></div>
+                    <div class="filter filters__officer"></div>
+                    <div class="filter filters__all"></div>
+
+                    <div class="filter show__witnesses"></div>
+                </div>
+            </header>
+            <article class="noteFormContainer">
+
+
+
+            </article>
+            <article class="notesContainer"></article>
+            <article class="criminalsContainer"></article>
+        </main>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!doctype html>
 <html lang="en">
 
 <head>
@@ -11,18 +53,25 @@
 
     <main class="container">
         <header>
-            <h1>Glassdale</h1>
+            <h1><span>GLASSDALE 5-0</span>
+                </h1>
             <div class="filters">
                 <div class="filters__crime"></div>
                 <div class="filter filters__incarceration"></div>
                 <div class="filter filters__officer"></div>
+                <div class="filter filter__button"></div>
+
             </div>
         </header>
         <article class="noteFormContainer"></article>
+        <section class="noteContainer"></section>
+        <article class="witnessesContainer">
+            <header class="witness__header"></header>
+            <section class="witnesses"></section>
+        </article>
         <article class="criminalsContainer"></article>
 
 
-        
       
 
 
@@ -31,4 +80,4 @@
     <script type="module" src="./scripts/main.js"></script>
 </body>
 
-</html>
+</html> -->

@@ -1,8 +1,184 @@
-h1 {
+
+.page{
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+}
+.criminalsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  /* padding: 30pt; */
+  /* -moz-box-shadow:    3px 3px 5px 6px rgb(138, 137, 137);
+  -webkit-box-shadow: 3px 3px 5px 6px rgb(138, 137, 137); */
+  box-shadow:         10px 10px 5px 6px rgb(138, 137, 137);
+  width: 100%;
+  min-height: 600px;
+  justify-content: center;
+
+}
+
+.criminal {
+  flex-basis: 20%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 10pt;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding: 8pt;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  box-shadow: 5px 5px 5px 6px rgb(138, 137, 137);
+
+  
+  /* justify-content: center; */
+}
+.witness {
+  flex-basis: 20%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 10pt;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding: 8pt;
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  box-shadow: 5px 5px 5px 6px rgb(138, 137, 137);
+}
+
+.criminal__name{
+  background-color: rgb(10, 10, 37);
+  color: white;
+  height: 25pt;
+  padding: 5pt;
+}
+
+.criminal__info {
+  flex-basis: 10%
+}
+
+.pageTitle {
   text-align: center;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(202,202,202,0);
+color: #333333;
+background: #FFFFFF;
+font-size: 45pt;
+margin: 30pt;
+border-bottom: 3px solid rgb(18, 18, 114);
+align-content: center;
+width: 100%;
+}
+
+.crimeDropdown {
+  box-shadow: grey;
+}
+
+.noteFormContainer {
+  /* border: 1px solid black; */
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  box-shadow:         10px 10px 5px 6px rgb(138, 137, 137);
+
+  width: 100%
+
+}
+
+.container {
+  /* margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px; */
+  /* padding: 30pt; */
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+
+}
+
+.filters {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.filter {
+  flex-basis: 50%;
+  padding: 5pt
+}
+
+.filters__all {
+  display: flex;
+}
+
+.form {
+  padding: 10pt;
+  max-height: 500px
+ 
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 5pt;
+  padding: 5pt
+}
+
+.page {
+  max-width: 900px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.notesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px;
+  max-width: 900px
+
+}
+
+.note {
+  flex-basis: 30%;
+  margin: 20pt;
+  max-width: 170pt
 }
 
 
+
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 2rem;
+  background-size: 400% 400%;
+  animation: gradientBG .3s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+}
+
+/* 
 .criminalsContainer {
     border: 1px solid black;
     display:flex;
@@ -14,21 +190,42 @@ h1 {
   border:1px solid black;
   flex-basis: 30%;
   margin:15px;
-  color: rgb(255, 255, 255);
+  color: rgb(4, 0, 0);
+  margin:0;
   
 }
 body{
-  background-image:url(https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555385796/shape/mentalfloss/copshed.png);
   background-size: contain;
   background-image: no-repeat;
   justify-content: center;
+  background-color:transparent;
   
 }
 
 header{
 
-    background-color: rgb(125, 201, 242);  
-  
+    background-color: rgb(7, 7, 210, 0.2);  
+  color: aliceblue;
 }
 
+
+.note {
+  text-align: center;
+  color: aliceblue;
+  border: 1px solid black;
+}
+
+button {
+  width:100px;
+  height:30px;
+}
+
+article {
+  text-align: center;
+}
+
+.noteFormContainer {
+  justify-content: space-evenly;
+}
+ */
 
